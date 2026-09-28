@@ -1,0 +1,2 @@
+# Keep Unix line endings so the bash scripts run on every OS (Windows checkouts included)
+*.sh text eol=lf
