@@ -1,0 +1,5 @@
+# Never commit personal data into the plugin repo
+career-profile/
+*.pdf
+rendercv_output/
+.DS_Store

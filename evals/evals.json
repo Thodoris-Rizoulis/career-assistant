@@ -1,0 +1,82 @@
+{
+  "skill_name": "career-assistant",
+  "evals": [
+    {
+      "id": 1,
+      "skill": "career-profile",
+      "prompt": "I want to set up my career assistant. I'm a nurse in Thessaloniki and my old CV is at ~/Documents/cv.docx.",
+      "expected_output": "Creates the profile folder, copies the CV into imports/ itself, asks for name and contact in chat, asks about goals early, interviews for results with nursing-relevant numbers, drafts skills.md and at least one goal file. Never asks the user to edit or move files. No placeholder or example data left in the profile. Invents nothing.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "skill": "career-profile",
+      "prompt": "I've decided I want to become a finance manager within two years.",
+      "expected_output": "Creates goals/finance-manager.md (or similar slug) with status active, asks only the missing sharpening questions (market, why, success, pay target), and suggests a gap analysis as the next step.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "skill": "career-profile",
+      "prompt": "I passed my CFA Level 1 exam last week!",
+      "expected_output": "Adds the certification to cv.yaml, sets proof to Verified in skills.md for the related skills, logs it in the relevant goal's progress log with today's date, and shows the exact changes.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "skill": "market-research",
+      "prompt": "What do employers look for in senior UX designers in Berlin right now, and what do they pay?",
+      "expected_output": "Live search across several sources, samples 10-20 recent ads, writes a demand profile with requirement types and must/nice/rising, pay ranges with currency, gross/net and dates, states confidence, saves a report and a market-notes.md entry.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "skill": "gap-analysis",
+      "prompt": "How far am I from being a strong candidate for head of sales roles?",
+      "expected_output": "Checks for a demand profile under ~60 days old (runs market-research if missing), classifies requirements into strengths, proof gaps, level gaps and missing, names the user's edge, gives a count-based readiness line, picks top 3-5 gaps, updates the goal file and skills.md, and compares with the previous analysis if one exists.",
+      "files": []
+    },
+    {
+      "id": 6,
+      "skill": "growth-plan",
+      "prompt": "Make me a plan to close my gaps. I have about 4 hours a week and maybe 500 euros for the year.",
+      "expected_output": "Uses the latest gap analysis, focuses on 2-3 gaps with proof gaps first, pairs each with a way to learn and a way to prove, prefers growth inside the current job, names only real resources checked live with links and prices, sets dated milestones that fit 4 h/week and the budget, writes the plan into the goal file.",
+      "files": []
+    },
+    {
+      "id": 7,
+      "skill": "growth-plan",
+      "prompt": "Quick update: I finished the Excel course from my plan and built a reporting dashboard at work. It saves my team about 3 hours a week.",
+      "expected_output": "Runs a check-in: ticks off the actions, logs progress, adds a CV highlight with the 3 hours/week result, updates skills.md level and proof to Shown, moves the next gap into focus if one closed, and reports progress in market terms.",
+      "files": []
+    },
+    {
+      "id": 8,
+      "skill": "growth-plan",
+      "prompt": "What should I learn next to be more valuable as a backend developer?",
+      "expected_output": "Checks market data freshness and gap analysis first (running them if stale), then recommends 2-3 focus gaps with ways to prove them. Does not answer from assumed technology trends.",
+      "files": []
+    },
+    {
+      "id": 9,
+      "skill": "presence-audit",
+      "prompt": "I'm a teacher trying to move into instructional design. What does my online presence say about me?",
+      "expected_output": "Picks channels relevant to the goal (LinkedIn, a portfolio of learning materials) rather than GitHub, checks whether strengths and proof are visible, finds proof the user has but doesn't show, writes a prioritized fix list, and changes nothing on the user's accounts.",
+      "files": []
+    },
+    {
+      "id": 10,
+      "skill": "cv-builder",
+      "prompt": "Make me a CV for this job: Operations Manager at a logistics company in Athens. Must have: 5+ years in logistics, team leadership, ERP systems (SAP preferred), KPI reporting. Nice to have: Lean Six Sigma, English C1.",
+      "expected_output": "Tailored cv.yaml copy in cvs/tailored/<date>-<employer>/, rendered PDF within 1-2 pages (or a one-line offer to install RenderCV), and a match report with strong matches, partial matches and honest gaps. Master cv.yaml unchanged. Does not add SAP or Lean Six Sigma if the profile lacks them.",
+      "files": []
+    },
+    {
+      "id": 11,
+      "skill": null,
+      "prompt": "Write a Python script that renames all .jpg files in a folder by date.",
+      "expected_output": "No career-assistant skill is triggered.",
+      "files": []
+    }
+  ]
+}

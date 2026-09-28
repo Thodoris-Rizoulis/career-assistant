@@ -1,0 +1,10 @@
+{
+  "name": "career-assistant",
+  "version": "0.2.0",
+  "description": "A personal career coach for any profession: learns where you stand, checks what the market wants for your goals, and helps you close the gap with a realistic growth plan. Also builds tailored CVs and reviews your online presence.",
+  "author": {
+    "name": "Thodoris Rizoulis"
+  },
+  "license": "MIT",
+  "keywords": ["career", "career-growth", "skills-gap", "upskilling", "job-market", "cv", "resume", "linkedin"]
+}

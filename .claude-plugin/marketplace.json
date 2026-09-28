@@ -1,0 +1,17 @@
+{
+  "name": "career-tools",
+  "owner": {
+    "name": "Thodoris Rizoulis"
+  },
+  "metadata": {
+    "description": "Tools that help people in any profession grow their career and stay in demand."
+  },
+  "plugins": [
+    {
+      "name": "career-assistant",
+      "source": "./plugins/career-assistant",
+      "description": "A personal career coach for any profession: profile and goals, live market research, gap analysis, growth plans with check-ins, presence audit, and tailored CVs.",
+      "version": "0.2.0"
+    }
+  ]
+}
